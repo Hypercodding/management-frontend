@@ -75,6 +75,7 @@ export const employeesAPI = {
 export const salariesAPI = {
   getAll: (params) => api.get('/salaries', { params }),
   create: (data) => api.post('/salaries', data),
+  preview: (data) => api.post('/salaries/preview', data),
   delete: (id) => api.delete(`/salaries/${id}`),
 };
 
